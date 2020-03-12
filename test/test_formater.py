@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(0, './')
 from hello_world.formater import plain_text_upper_case
 import unittest
 

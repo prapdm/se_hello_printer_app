@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(0, './')
 import unittest
 from hello_world import app
 from hello_world.formater import SUPPORTED
@@ -14,4 +16,5 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_output(self):
         rv = self.app.get('/?output=json')
-        self.assertEquals('{ "imie":"Natalia", "mgs":Hello World!"}', rv.data)
+        self.assertEquals('{ "imie":"Pawel", "mgs":"Hello World!"}', rv.data)
+ 
